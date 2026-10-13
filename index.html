@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Same Loss, Same Noise, Opposite Schedules</title>
+<style>
+  body { margin: 0; font-family: -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; background: #fff; color: #1e2329; }
+  header { background: #5D1725; color: #fff; padding: 20px 16px; text-align: center; }
+  h1 { margin: 0; font-size: 1.5rem; }
+  header p { margin: 6px 0 0; opacity: .9; }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px 16px; }
+  video, img { width: 100%; height: auto; border-radius: 8px; }
+  p { line-height: 1.5; }
+  a { color: #5D1725; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Same Loss, Same Noise, Opposite Schedules</h1>
+  <p>Subha Raut, Subham Singh, Ashutosh Mishra · Mississippi State University</p>
+</header>
+<main>
+  <video src="cooldown_animation.mp4" autoplay loop muted playsinline poster="cooldown_animation.gif"></video>
+  <p><strong>SGD</strong> takes steps that follow the slope, so they shrink on their own and it settles at the bottom.
+  <strong>signSGD</strong> (an Adam-like method) takes fixed-length steps and keeps hopping around the bottom.
+  With a <strong>cooldown</strong>, its steps shrink at the end of training and it settles too.</p>
+  <p>Paper: <a href="https://arxiv.org/abs/2607.12360">arXiv:2607.12360</a></p>
+</main>
+</body>
+</html>
